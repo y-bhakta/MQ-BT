@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FormValidation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" onsubmit="formvalidation(); return false">
+                    <h2 class="mb-3">Sign Up</h2>
+                    <div class="d-flex flex-wrap">
+                        <div class="mb-3 p-3 col-md-4">
+                            <label for="username" class="visually-hidden">Username</label>
+                            <input type="text" class="form-control" name="Username" id="username"
+                                placeholder="Enter your Username">
+                            <span id="usernameerror" class="text-danger">Enter Proper Username</span>
+                            <span id="usernamevalid" class="text-success">It's Good</span>
+                        </div>
+                        <div class="mb-3 p-3 col-md-8">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" class="form-control" name="Email" id="email"
+                                placeholder="Enter your Email">
+                            <span id="emailerror" class="text-danger">Enter Proper Email</span>
+                            <span id="emailvalid" class="text-success">It's Good</span>
+                        </div>
+                        <div class="mb-3 p-3 col-md-8">
+                            <label for="password" class="visually-hidden">Username</label>
+                            <input type="password" class="form-control" name="Password" id="password"
+                                placeholder="Enyer your Password">
+                            <span id="passworderror" class="text-danger">Enter Proper Password</span>
+                            <span id="passwordvalid" class="text-success">It's Good</span>
+                        </div>
+                        <div class="mb-3 p-3 col-md-4">
+                            <label for="city" class="visually-hidden">City</label>
+                            <input type="text" class="form-control" name="City" id="city" placeholder="Enyer your City">
+                            <span id="cityerror" class="text-danger">Enter Proper City</span>
+                            <span id="cityvalid" class="text-success">It's Good</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sumbit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <h1 align="center">Inbuilt Validation</h1>
+            <form method="post" class="needs-validation g-3" onsubmit="return false" novalidate>
+                <div class="col-md-12 d-flex flex-wrap">
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <label for="name1" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="Your First Name" name="firstname" id="name1"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper Firstname</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <label for="name2" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Your Last Name" name="lastname" id="name2"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper Lastname</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <label for="username" class="form-label d-block">Username</label>
+                            <input type="text" class="form-control" placeholder="Your  Username" name="lastname" id="name2" required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper Username</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-2">
+                            <label for="address" class="form-label">Address </label>
+                        <input type="text" class="form-control" placeholder="Your Address " name="Address" id="adress"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper Address</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-2">
+                            <label for="city" class="form-label">City </label>
+                        <input type="text" class="form-control" placeholder="Your City " name="City" id="city"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper City</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-2">
+                            <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" placeholder="Your State" name="State" id="state"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper State</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2">
+                            <label for="pincode" class="form-label">Pin Code</label>
+                        <input type="text" class="form-control" placeholder="Your Pincode" name="Pincode" id="pincode"
+                            required>
+                            <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Enter Proper Zip</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-5 form-check">
+                        <input type="checkbox" class="form-check-input" name="TC" id="termcondition">
+                        <label for="termcondition" class="form-check-label">Agree To term And Condition</label>
+                        <span class="valid-feedback">Looks Godd</span>
+                            <span class="invalid-feedback">Pls Do Agree!!</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-3">Submit Form</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('usernameerror').style.display = "none";
+        document.getElementById('usernamevalid').style.display = "none";
+
+        document.getElementById('emailerror').style.display = "none";
+        document.getElementById('emailvalid').style.display = "none";
+
+        document.getElementById('passworderror').style.display = "none";
+        document.getElementById('passwordvalid').style.display = "none";
+
+        document.getElementById('cityerror').style.display = "none";
+        document.getElementById('cityvalid').style.display = "none";
+
+        function formvalidation() {
+            let username = document.getElementById('username');
+            let email = document.getElementById('email');
+            let passwoed = document.getElementById('password');
+            let city = document.getElementById('city');
+
+            if (username.value == "") {
+                username.classList.add('is-invalid');
+                username.classList.remove('is-valid');
+                document.getElementById('usernameerror').style.display = "block";
+                document.getElementById('usernamevalid').style.display = "none";
+            }
+            else {
+                username.classList.add('is-valid');
+                username.classList.remove('is-invalid');
+                document.getElementById('usernameerror').style.display = "none";
+                document.getElementById('usernamevalid').style.display = "block";
+            }
+
+            if (email.value == "" || !email.value.includes('@')) {
+                email.classList.add('is-invalid');
+                email.classList.remove('is-valid');
+                document.getElementById('emailerror').style.display = "block";
+                document.getElementById('emailvalid').style.display = "none";
+            }
+            else {
+                email.classList.add('is-valid');
+                email.classList.remove('is-invalid');
+                document.getElementById('emailerror').style.display = "none";
+                document.getElementById('emailvalid').style.display = "block";
+            }
+
+            if (password.value == "") {
+                password.classList.add('is-invalid');
+                password.classList.remove('is-valid');
+                document.getElementById('passworderror').style.display = "block";
+                document.getElementById('passwordvalid').style.display = "none";
+            }
+            else {
+                password.classList.add('is-valid');
+                password.classList.remove('is-invalid');
+                document.getElementById('passworderror').style.display = "none";
+                document.getElementById('passwordvalid').style.display = "block";
+            }
+
+            if (city.value == "") {
+                city.classList.add('is-invalid');
+                city.classList.remove('is-valid');
+                document.getElementById('cityerror').style.display = "block";
+                document.getElementById('cityvalid').style.display = "none";
+            }
+            else {
+                city.classList.add('is-valid');
+                city.classList.remove('is-invalid');
+                document.getElementById('cityerror').style.display = "none";
+                document.getElementById('cityvalid').style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
+    </script>
+</body>
+
+</html>

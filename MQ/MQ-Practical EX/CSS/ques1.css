@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.cont{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.cont-fluide{
+    max-width: 100%;
+    padding: 0 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.d-none{
+    display: none;
+}
+.col-1{
+    width: 8.33% ;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width:33.33% ;
+}
+.col-5{
+    width:41.66% ;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width:75% ;
+}
+.col-10{
+    width:83.33% ;
+}
+.col-11{
+    width:91.66% ;
+}
+.col-12{
+    width: 100%;
+}
+.col-2-5{
+    width: 20%;
+}
+.col-3-5{
+    width: 30%;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-2-5{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.j-center{
+    justify-content: center;
+}
+.a-center{
+    align-items: center;
+}
+.j-btw{
+    justify-content: space-between;
+}
+.title h1{
+    font-size: 55px;
+    color: orange;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+.title p{
+    font-size: 20px;
+    color: red;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+img{
+    max-width: 100%;
+}
+.ci{
+    margin-top: 75px;
+    padding: -100px ;
+}
+.content .cs{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cs .cardimg{
+    margin: 15px;
+    width: 90%;
+}
+.cardcont h3,span,p{
+    margin: 10px 0px;
+}
+.cardcont h3{
+    font-weight: 800;
+}

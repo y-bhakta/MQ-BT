@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.cont{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.cont-fluide{
+    max-width: 100%;
+    padding: 0 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.j-center{
+    justify-content: center;
+}
+.j-btw{
+    justify-content: space-between;
+}
+.a-center{
+    align-items: center;
+}
+.col-1{
+    width: 8.33% ;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width:33.33% ;
+}
+.col-5{
+    width:41.66% ;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width:75% ;
+}
+.col-10{
+    width:83.33% ;
+}
+.col-11{
+    width:91.66% ;
+}
+.col-12{
+    width: 100%;
+}
+.col-2-5{
+    width: 20%;
+}
+.col-5-5{
+    width: 49%;
+}
+.title h1{
+    font-size: 55px;
+    color: purple;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+.title p{
+    font-size: 20px;
+    color: teal;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.buy a button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #0076DF;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.buy a h3{
+    color: #0076DF;
+    text-transform: none;
+}
+.p-cont{
+    padding: 10px 5px;
+}
+.p-cont h2{
+    margin: 10px 0px;
+}
+.buy{
+    padding: 10px 5px;
+}
+.rate span{
+    color: yellow;
+}
+.cs{
+    background-color: plum;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.pl{
+    margin-top: 50px;
+}
+.cardcont{
+    padding: 15px 20px;
+}
